@@ -206,8 +206,8 @@ await client.sendMessage(m.chat, {
       { optionName: "Option 2" }
     ],
     newsletter: {
-      newsletterName: "0X8 - Society",
-      newsletterJid: "120363424944937940@newsletter"
+      newsletterName: "Obailys Channel",
+      newsletterJid: "1203630000000000@newsletter"
     }
   }
 });
