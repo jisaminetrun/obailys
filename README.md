@@ -185,7 +185,7 @@ await client.sendMessage(m.chat, {
 ## Send an orderMessage
 ```javascript
 const fs = require('fs');
-const thumbnail = fs.readFileSync('./pouthumb.jpg');
+const thumbnail = fs.readFileSync('./thumb.jpg');
 
 await client.sendMessage(m.chat, {
   thumbnail,
@@ -219,7 +219,7 @@ await client.relayMessage(m.chat, {
   productMessage: {
     title: "Product.pdf",
     description: "Product description",
-    thumbnail: { url: "./pouthumb.jpg" },
+    thumbnail: { url: "./thumb.jpg" },
     productId: "EXAMPLE_TOKEN",
     retailerId: "EXAMPLE_RETAILER_ID",
     url: "https://example.com",
@@ -240,7 +240,7 @@ await client.relayMessage(m.chat, {
 ## Send an interactiveMessage
 ```javascript
 await client.sendMessage(m.chat, {
-  image: { url: "./xczimg.jpg" },
+  image: { url: "./image.jpg" },
   text: "body",
   title: "title", // required when sending media
   footer: "footer",
@@ -300,7 +300,7 @@ await client.sendText(m.chat, "Hello!", {
 
 ## Send image
 ```javascript
-await client.sendImage(m.chat, { url: "./xczimg.jpg" }, "Caption", {
+await client.sendImage(m.chat, { url: "./image.jpg" }, "Caption", {
   contextInfo: {
     mentionedJid: [m.chat]
   }
